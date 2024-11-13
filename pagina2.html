@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Más Información</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Texto de bienvenida animado -->
+        <h1 class="animated-text">Más Información sobre los Autos</h1>
+
+        <!-- Imagen en movimiento -->
+
+        <!-- Imágenes de los autos con enlaces a las páginas correspondientes -->
+        <div class="car-images">
+            <div class="car-image">
+                <a href="pagina1.html">
+                    <img src="toyota_corolla.jpg" alt="Toyota Corolla">
+                </a>
+                <p>Toyota Corolla</p>
+            </div>
+            <div class="car-image">
+                <a href="pagina1.html">
+                    <img src="honda_civic.jpg" alt="Honda Civic">
+                </a>
+                <p>Honda Civic</p>
+            </div>
+            <div class="car-image">
+                <a href="pagina1.html">
+                    <img src="bmw_15.jpg" alt="BMW X5">
+                </a>
+                <p>BMW X5</p>
+            </div>
+            <div class="car-image">
+                <a href="pagina1.html">
+                    <img src="ford_focus.jpg" alt="Ford Focus">
+                </a>
+                <p>Ford Focus</p>
+            </div>
+            <div class="car-image">
+                <a href="pagina1.html">
+                    <img src="chevrolet_camaro.jpg" alt="Chevrolet Camaro">
+                </a>
+                <p>Chevrolet Camaro</p>
+            </div>
+        </div>
+
+        <!-- Botones de navegación -->
+        <div class="buttons">
+            <a href="index.html" class="styled-button">Volver al Inicio</a>
+            <a href="pagina1.html" class="styled-button">Ver Autos</a>
+        </div>
+
+        <!-- Pie de página con derechos de autor -->
+        <footer class="footer">
+            <p>&copy; 2024 Romina Enciso. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <style>
+        /* Estilo para las imágenes de los autos */
+        .car-images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .car-image {
+            text-align: center;
+            position: relative;
+        }
+
+        .car-image img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .car-image:hover img {
+            transform: scale(1.1);
+        }
+
+        .car-image p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #8c2a50;
+        }
+    </style>
+</body>
+</html>

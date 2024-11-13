@@ -1,0 +1,145 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo y tipografía */
+body {
+    background-color: #fbe7f6;
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fff0f6;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto animado */
+.animated-text {
+    font-size: 2.5rem;
+    color: #d35d90;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Imagen en movimiento */
+.moving-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+    animation: float 4s infinite ease-in-out;
+}
+
+/* Botones estilizados */
+.styled-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #d35d90;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.styled-button:hover {
+    background-color: #f7a1c4;
+    transform: scale(1.05);
+}
+
+.styled-button:active {
+    background-color: #b9406d;
+}
+
+/* Descripción */
+.description {
+    font-size: 1.1rem;
+    color: #8c2a50;
+}
+
+/* Tabla estilizada */
+.styled-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    border: 1px solid #d35d90;
+    background-color: #fdf0f5;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.styled-table th, .styled-table td {
+    padding: 15px;
+    text-align: center;
+    color: #8c2a50;
+    border-bottom: 1px solid #d35d90;
+}
+
+.styled-table th {
+    background-color: #d35d90;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: #fbe7f6;
+}
+
+.styled-table tr:hover {
+    background-color: #f7a1c4;
+}
+
+/* Pie de página */
+.footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #8c2a50;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    .animated-text {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .styled-button {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+    }
+
+    .styled-table {
+        width: 100%;
+    }
+}
